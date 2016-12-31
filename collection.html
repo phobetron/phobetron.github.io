@@ -1,9 +1,44 @@
 <html>
   <head>
     <title>Charles' CD Collection</title>
+    <style>
+      dt, dd {
+        padding: 1em 0;
+        border-top: 1px solid #000;
+      }
+      dt {
+        float: left;
+        width: 20%;
+      }
+      dd {
+        width: 75%;
+        margin: 0 0 0 20%;
+        padding: 0 5% 0 0;
+      }
+      dd:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      ul { padding: 0 0 0 2.5em; }
+      @media (min-width: 64em) {
+        dl {
+          float: left;
+          width: 47.5%;
+        }
+        dt { width: 40% }
+        dd {
+          width: 55%;
+          margin: 0 0 0 40%;
+        }
+        dl:first-of-type {
+          margin-right: 5%;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Charles' CD Collection <small>(~368 albums)</small></h1>
+    <h1>Charles' CD Collection <small>(~360 albums from 152 bands)</small></h1>
     <dl>
 <dt><strong>_Of the Wand &amp; the Moon_</strong></dt>
 <dd>
@@ -37,7 +72,6 @@
     <li>9.9.99. 9 Uhr</li>
     <li>Aggressor</li>
     <li>Anguish</li>
-    <li>Bodypop</li>
     <li>Flop!</li>
     <li>Frontfeuer</li>
     <li>I.S.T</li>
@@ -135,12 +169,6 @@
     <li>No Hope, No Fear</li>
   </ul>
 </dd>
-<dt><strong>Boyd Rice and Friends</strong></dt>
-<dd>
-  <ul>
-    <li>The Registered Three</li>
-  </ul>
-</dd>
 <dt><strong>Camouflage</strong></dt>
 <dd>
   <ul>
@@ -199,7 +227,6 @@
   <ul>
     <li>Garlands-Peel Sessions</li>
     <li>Head Over Heels-Sunburst &amp; Snowblind</li>
-    <li>Treasure</li>
   </ul>
 </dd>
 <dt><strong>Collection d&#39;Arnell~Andréa</strong></dt>
@@ -293,9 +320,7 @@
 <dt><strong>Death in June</strong></dt>
 <dd>
   <ul>
-    <li><del>Brown Book</del></li>
     <li>But, What Ends When the Symbols Shatter_</li>
-    <li><del>Rose Clouds of Holocaust</del></li>
   </ul>
 </dd>
 <dt><strong>Decoded Feedback</strong></dt>
@@ -559,6 +584,8 @@
     <li>Pop</li>
   </ul>
 </dd>
+</dl>
+<dl>
 <dt><strong>Joke Jay</strong></dt>
 <dd>
   <ul>
@@ -592,11 +619,9 @@
 <dt><strong>Lycia</strong></dt>
 <dd>
   <ul>
-    <li>A Day in the Stark Corner</li>
     <li>Cold</li>
     <li>Empty Space</li>
     <li>Estrella</li>
-    <li>Ionia</li>
   </ul>
 </dd>
 <dt><strong>Melotron</strong></dt>
@@ -628,14 +653,7 @@
     <li>Mira</li>
   </ul>
 </dd>
-<dt><strong>Miranda Sex Garden</strong></dt>
-<dd>
-  <ul>
-    <li>Carnival of Souls</li>
-    <li>Suspiria</li>
-  </ul>
-</dd>
-<dt><strong>Miriamm</strong></dt>
+<dt><strong>Miriam</strong></dt>
 <dd>
   <ul>
     <li>When Beauty Is Invisible</li>
@@ -790,12 +808,6 @@
     <li>Talk About The Weather</li>
   </ul>
 </dd>
-<dt><strong>Requiem in White</strong></dt>
-<dd>
-  <ul>
-    <li><del>Of the Want Infinitie</del></li>
-  </ul>
-</dd>
 <dt><strong>Retrosic</strong></dt>
 <dd>
   <ul>
@@ -812,11 +824,7 @@
 <dt><strong>Rome</strong></dt>
 <dd>
   <ul>
-    <li>Berlin</li>
-    <li>Confessions d&#39;un voleur d&#39;ames</li>
-    <li>Flowers From Exile</li>
     <li>Masse Mensch Material</li>
-    <li>Nos chants perdus</li>
   </ul>
 </dd>
 <dt><strong>Rosetta Stone</strong></dt>
@@ -882,17 +890,6 @@
     <li>Trees in Winter</li>
   </ul>
 </dd>
-<dt><strong>Sopor Aeternus &amp; The Ensemble Of Shadows</strong></dt>
-<dd>
-  <ul>
-    <li>Dead Lovers&#39; Sarabande (Face One)</li>
-    <li>Dead Lovers&#39; Sarabande (Face Two)</li>
-    <li>La Chambre d&#39;Echo - Where the Dead Birds Sing</li>
-    <li>Les Fleurs du Mal</li>
-    <li>Like a Corpse Standing in Desperation (disc 2)</li>
-    <li>Songs From The Inverted Womb</li>
-  </ul>
-</dd>
 <dt><strong>Soriah</strong></dt>
 <dd>
   <ul>
@@ -949,12 +946,6 @@
 <dd>
   <ul>
     <li>Eternity- The Best of Syntec</li>
-  </ul>
-</dd>
-<dt><strong>Tactical Sekt</strong></dt>
-<dd>
-  <ul>
-    <li><del>Syncope</del></li>
   </ul>
 </dd>
 <dt><strong>The Beauty Of Gemina</strong></dt>
@@ -1016,12 +1007,6 @@
   <ul>
     <li>Anthology [CD 1]</li>
     <li>Anthology [CD 2]</li>
-  </ul>
-</dd>
-<dt><strong>The Order Of The NCS</strong></dt>
-<dd>
-  <ul>
-    <li><del>The Musical Works Of The NCS Volume 1</del></li>
   </ul>
 </dd>
 <dt><strong>The Shroud</strong></dt>
@@ -1111,7 +1096,6 @@
 <dt><strong>Virgin Prunes</strong></dt>
 <dd>
   <ul>
-    <li>...If I Die, I Die</li>
     <li>If I Die, I Die</li>
   </ul>
 </dd>
