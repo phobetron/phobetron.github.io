@@ -1,16 +1,10 @@
 {
-  "name": "ghp-boilerplate",
+  "name": "phobetron.gihub.io",
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "author": "Charles Hudson",
-  "description": "Github Pages Boilerplate",
-  "keywords": [
-    "github",
-    "pages",
-    "jekyll",
-    "webpack",
-    "vue"
-  ],
+  "description": "charleshudson.com",
+  "keywords": [],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --watch | bundle exec jekyll serve",
@@ -18,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phobetron/ghp-boilerplate"
+    "url": "git+https://github.com/phobetron/phobetron.gihub.io"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
