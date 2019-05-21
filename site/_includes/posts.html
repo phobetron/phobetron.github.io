@@ -1,0 +1,19 @@
+{% if site.posts.size > 0 %}
+<section>
+  <h2>Blog posts</h2>
+
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <article>
+          <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </article>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</section>
+{% endif %}

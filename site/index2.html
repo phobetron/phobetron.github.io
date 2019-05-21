@@ -1,0 +1,50 @@
+---
+layout: site
+---
+
+<header>
+  {% include global_header.html %}
+  <p>Software Design &amp; Engineering</p>
+</header>
+
+<main>
+  <section>
+    <h2>Areas of Expertise</h2>
+    <ul>
+      <li>User Experience</li>
+      <li>Accessibility</li>
+      <li>Internationalization</li>
+      <li>Software-Oriented Architecture</li>
+      <li>Appication Programming Interfaces and Protocols</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Market Experience</h2>
+    <ul>
+      <li>E-Commerce</li>
+      <li>Education</li>
+      <li>Financial</li>
+      <li>Healthcare</li>
+      <li>Military</li>
+    </ul>
+  </section>
+
+  <section>
+    <p>
+      Charles has been professionally creating, updating, and maintaing
+      web-based applications since 1999.
+    </p>
+
+    <p>
+      <a href="/resume">View Resume</a>
+    </p>
+  </section>
+
+  {% if site.posts.size > 0 %}<hr/>{% endif %}
+  {% include posts.html %}
+</main>
+
+<footer>
+  {% include global_footer.html %}
+</footer>

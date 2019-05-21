@@ -1,0 +1,118 @@
+{
+  "basics": {
+    "name": "Charles Hudson",
+    "label": "Software Engineer",
+    "picture": "",
+    "email": "work@charleshudson.com",
+    "phone": "323-963-3284",
+    "website": "https://charleshudson.com",
+    "summary": "Full-Stack Software Engineer with experience in User Experience and Service Oriented Architecture",
+    "location": {
+      "address": "234 W 6th St",
+      "postalCode": "32206",
+      "city": "Jacksonville",
+      "countryCode": "US",
+      "region": "Florida"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "phobetron",
+        "url": "https://github.com/phobetron"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "charleshhudson",
+        "url": "https://www.linkedin.com/in/charleshhudson"
+      }
+    ]
+  },
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "German",
+      "fluency": "Working knowledge"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "Ruby",
+        "Crystal",
+        "Elixir",
+        "Javascript",
+        "Python",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Front-End",
+      "keywords": [
+        "HTML",
+        "SVG",
+        "CSS",
+        "Webpack",
+        "Vue.js",
+        "AngularJS",
+        "React",
+        "SASS/SCSS",
+        "Microformats"
+      ]
+    },
+    {
+      "name": "Back-End",
+      "keywords": [
+        "Rails",
+        "Sinatra",
+        "Node.js",
+        "Phoenix",
+        "Django",
+        "SciPy",
+        "PostgreSQL",
+        "MongoDB",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Software Design",
+      "keywords": [
+        "Service-Oriented Architecture",
+        "APIs & Protocols",
+        "Constant Integration",
+        "Test-Driven Design",
+        "Analytics",
+        "Web Accessibility",
+        "Internationalization",
+        "Localization",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "Systems & Tools",
+      "keywords": [
+        "Linux",
+        "MacOS",
+        "iOS",
+        "Vim",
+        "Git",
+        "Sketch",
+        "Adobe CS"
+      ]
+    }
+  ],
+  "work": [{
+    "company": "Company",
+    "position": "President",
+    "website": "http://company.com",
+    "startDate": "2013-01-01",
+    "endDate": "2014-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Started the company"
+    ]
+  }]
+}

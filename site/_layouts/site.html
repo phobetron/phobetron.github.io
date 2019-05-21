@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+
+    {% comment %}{% include styles.html %}{% endcomment %}
+  </head>
+  <body class="page-{{ page.name | split: '.' | first }}">
+    {{ content }}
+
+    {% comment %}{% include scripts.html %}{% endcomment %}
+  </body>
+</html>
