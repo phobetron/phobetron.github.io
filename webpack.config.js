@@ -37,18 +37,18 @@ const config = {
     new HtmlWebpackPlugin({
       inject: false,
       template: path.resolve(__dirname, 'app', 'scripts.template.html'),
-      filename: path.resolve(__dirname, 'site', '_includes', 'scripts.html'),
+      filename: path.resolve(__dirname, '_includes', 'scripts.html'),
     }),
     new HtmlWebpackPlugin({
       inject: false,
       template: path.resolve(__dirname, 'app', 'styles.template.html'),
-      filename: path.resolve(__dirname, 'site', '_includes', 'styles.html'),
+      filename: path.resolve(__dirname, '_includes', 'styles.html'),
     }),
     new webpack.HashedModuleIdsPlugin(),
   ],
   output: {
     publicPath: '/ghp-boilerplate/assets/',
-    path: path.resolve(__dirname, 'site', 'assets'),
+    path: path.resolve(__dirname, 'assets'),
     filename: 'javascript/[name].[contenthash].js',
     chunkFilename: 'javascript/[name].[contenthash].js',
   },
