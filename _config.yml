@@ -14,7 +14,6 @@ host: "0.0.0.0"
 port: 8080
 
 # Build settings
-source: site
 markdown: kramdown
 sass:
   sass_dir: _sass
