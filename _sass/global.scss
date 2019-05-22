@@ -1,3 +1,100 @@
+address {
+  font-style: normal;
+}
+
+dt {
+  float: left;
+  margin-right: .5em;
+}
+dd {
+  margin: 0;
+
+  &::after {
+    clear: left;
+    content: '';
+    display: block;
+    line-height: 1px;
+  }
+}
+
+html {
+  height: 100%;
+}
 body {
+  display: grid;
   font-family: Arial;
+  grid-template-rows: 10em auto 4em;
+  margin: 0;
+  min-height: 100%;
+
+  > header {
+    background: red;
+    color: white;
+    grid-row: 1;
+    height: 10em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    > div {
+      font-family: 'Russo One', sans-serif;
+      text-shadow: .1em .1em .1em black;
+      text-transform: uppercase;
+    }
+
+    h1, p {
+      margin: 0;
+    }
+    p {
+      font-size: 1.725em;
+    }
+  }
+
+  > footer {
+    grid-row: 3;
+    margin: 1em;
+  }
+}
+
+main {
+  grid-row: 2;
+  margin: 1em;
+}
+
+main, footer {
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-resume address {
+  background: #eee;
+  margin: -1em -1em 1em -1em;
+  padding: 1em;
+
+  dl {
+    font-size: .75em;
+    margin: 0;
+  }
+  dt {
+    width: 4em;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    > header {
+      perspective: 30em;
+
+      > div {
+        bottom: 1em;
+        left: 2em;
+        position: absolute;
+        transform: scale(2.5, 1) rotate3d(0, -1, -0.125, 45deg);
+      }
+    }
+  }
 }

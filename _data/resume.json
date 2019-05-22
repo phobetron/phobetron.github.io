@@ -6,11 +6,11 @@
     "email": "work@charleshudson.com",
     "phone": "323-963-3284",
     "website": "https://charleshudson.com",
-    "summary": "Full-Stack Software Engineer with experience in User Experience and Service Oriented Architecture",
+    "summary": "A Full-Stack Software Engineer with expertise in User Experience and Service Oriented Architecture, and an extensive background in various industries, platforms and solutions",
     "location": {
       "address": "234 W 6th St",
       "city": "Jacksonville",
-      "region": "Florida",
+      "region": "FL",
       "postalCode": "32206",
       "countryCode": "US"
     },
@@ -78,6 +78,18 @@
       ]
     },
     {
+      "name": "Systems & Tools",
+      "keywords": [
+        "Linux",
+        "MacOS",
+        "iOS",
+        "Vim",
+        "Git",
+        "Sketch",
+        "Adobe CS"
+      ]
+    },
+    {
       "name": "Software Design",
       "keywords": [
         "Service-Oriented Architecture",
@@ -90,18 +102,6 @@
         "Localization",
         "Responsive Design"
       ]
-    },
-    {
-      "name": "Systems & Tools",
-      "keywords": [
-        "Linux",
-        "MacOS",
-        "iOS",
-        "Vim",
-        "Git",
-        "Sketch",
-        "Adobe CS"
-      ]
     }
   ],
   "work": [
@@ -109,12 +109,14 @@
       "company": "LearnZillion",
       "position": "Senior Software Engineer",
       "website": "https://learnzillion.com",
-      "startDate": "2017-01",
-      "endDate": "2019-05",
-      "summary": "Helped update and maintain a large Rails monolith for an Educational Technology organization. Performed major and minor refactoring, as well as created new features and solutions for partners and third-party integrations.",
+      "startDate": "2017-01-01",
+      "endDate": "2019-05-31",
+      "summary": "Helped update and maintain a large Rails monolith for an Educational Technology organization",
       "highlights": [
-        "Created an internationalization solution to fit the specific needs of a partner in Brazil",
-        "Managed difficult third-party integrations, while recovering lost institutional knowledge",
+        "Performed major and minor code refactoring",
+        "Created an internationalization solution to fit the specific needs of an offshore partner",
+        "Managed difficult third-party integrations",
+        "Worked to recover and codify lost institutional knowledge",
         "Helped migrate the front-end from a Knockout JS-based platform to Vue.js"
       ]
     },
@@ -122,9 +124,9 @@
       "company": "ZestFinance",
       "position": "Lead Software Engineer",
       "website": "https://zestfinance.com",
-      "startDate": "2014-11",
-      "endDate": "2016-10",
-      "summary": "Helped create new products as well as maintained existing products for a Financial Technology organization. Designed, built, and maintained front-end development platforms, as well as APIs and custom data protocols.",
+      "startDate": "2014-11-01",
+      "endDate": "2016-10-31",
+      "summary": "Helped create new products as well as maintained existing products for a Financial Technology organization",
       "highlights": [
         "Built a customer acqusition web application using AngularJS driven by a REST API based on HATEOAS principles",
         "Designed public and private REST APIs to leverage HATEOAS for better control and easier maintenance of integrations",
@@ -137,9 +139,9 @@
       "company": "Logical Reality Design",
       "position": "Software Engineer (Contract: Independent)",
       "website": "https://lrdesign.com",
-      "startDate": "2013-08",
-      "endDate": "2014-10",
-      "summary": "Worked as an independent contractor on various LRD client projects.",
+      "startDate": "2013-08-01",
+      "endDate": "2014-10-31",
+      "summary": "Worked as an independent contractor on various LRD client projects",
       "highlights": [
         "Worked on an internet advertisement platform, making major improvements to ad serving functionality",
         "Updated and maintained various features of a time tracking and invoicing system"
@@ -149,8 +151,8 @@
       "company": "Yellowpages.com",
       "position": "Senior Software Engineer/UI Specialist",
       "website": "https://yellowpages.com",
-      "startDate": "2010-03",
-      "endDate": "2013-04",
+      "startDate": "2010-03-01",
+      "endDate": "2013-04-30",
       "summary": "Helped build, maintain, update, refactor, and rebuild various features and user-facing systems for yellowpages.com and related properties",
       "highlights": [
         "Collaborated closely with User Experience and Product Management teams",
@@ -161,8 +163,8 @@
       "company": "Los Angeles Times/Tribune Company",
       "position": "Senior Software Engineer/UI Specialist",
       "website": "https://latimes.com",
-      "startDate": "2007-12",
-      "endDate": "2010-03",
+      "startDate": "2007-12-01",
+      "endDate": "2010-03-31",
       "summary": "Helped build and maintain various user-facing sites and systems for LA Times and its then-parent Tribune Company",
       "highlights": [
         "Developed the front-end of a high-traffic entertainment photography site with an integrated authoring component",
@@ -174,8 +176,8 @@
       "company": "Sony Pictures Entertainment",
       "position": "Software Engineer",
       "website": "https://sonypictures.com",
-      "startDate": "2007-03",
-      "endDate": "2007-11",
+      "startDate": "2007-03-01",
+      "endDate": "2007-11-30",
       "summary": "Converted to full-time employment, continuing previous work",
       "highlights": []
     },
@@ -183,8 +185,8 @@
       "company": "Sony Pictures Entertainment",
       "position": "Software Engineer (Contract: Alden Technologies)",
       "website": "https://sonypictures.com",
-      "startDate": "2006-09",
-      "endDate": "2007-03",
+      "startDate": "2006-09-01",
+      "endDate": "2007-03-31",
       "summary": "Designed and created the user interface and security model of a secure document management system to be used throughout the organization, including various associated production companies and contractors",
       "highlights": []
     },
@@ -192,101 +194,100 @@
       "company": "World Fuel Services",
       "position": "Web Application/UI Developer (Contract: Daniel Allen & Associates)",
       "website": "https://www.wfscorp.com",
-      "startDate": "2006-01",
-      "endDate": "2006-09",
-      "summary": "Designed and created the user experience to be applied to all corporate intranet applications. Guided colleagues with regard to standards and practices.",
+      "startDate": "2006-01-01",
+      "endDate": "2006-09-30",
+      "summary": "Designed and created the user experience to be applied to all corporate intranet applications, and guided colleagues with regard to standards and practices",
       "highlights": []
     },
     {
       "company": "US Naval Air Depot",
       "position": "Web Application/UI Designer (Contract: Robert Half/Baywood Technologies)",
       "website": "https://nadep.org",
-      "startDate": "2004-05",
-      "endDate": "2006-01",
-      "summary": "Designed and helped develop user-facing systems for a Time and Attendance web application, complying to all government standards for accessibility and availability. Gave training, guidance, and documentation to junior developers to assist completion of the project.",
+      "startDate": "2004-05-01",
+      "endDate": "2006-01-31",
+      "summary": "Designed and helped develop user-facing systems for a Time and Attendance web application, compliant with government standards for accessibility; offered training, guidance, and documentation for junior developers",
       "highlights": []
     },
     {
       "company": "RecruitMax, Inc. (Defunct)",
       "position": "Software Engineer",
       "website": "",
-      "startDate": "2004-01",
-      "endDate": "2004-05",
-      "summary": "Designed and developed the default skin for the flagship product. Created guidelines and updated products for accessibility compliance.",
+      "startDate": "2004-01-01",
+      "endDate": "2004-05-31",
+      "summary": "Designed and developed the default skin for the flagship product; created guidelines and updated products for accessibility compliance",
       "highlights": []
     },
     {
       "company": "Starwood Vacation Ownership (Defunct)",
       "position": "Web Application/UI Designer (Contract: TekSystems)",
       "website": "",
-      "startDate": "2003-10",
-      "endDate": "2003-12",
-      "summary": "Designed and helped develop the front­end to a customer history and direct­marketing response application that incorporated Do Not Call (DNC) provisioning capabilities.",
+      "startDate": "2003-10-01",
+      "endDate": "2003-12-31",
+      "summary": "Designed and helped develop the front­end to a customer history and direct­marketing response application that incorporated Do Not Call (DNC) provisioning capabilities",
       "highlights": []
     },
     {
       "company": "Law Communications LLC",
       "position": "Web Developer/Graphic Designer (Contract: Independent)",
       "website": "",
-      "startDate": "2003-03",
-      "endDate": "2003-07",
-      "summary": "Designed and developed websites, marketing campaigns, branding, logos and brochures for various law firms.",
+      "startDate": "2003-03-01",
+      "endDate": "2003-07-31",
+      "summary": "Designed and developed websites, marketing campaigns, branding, logos and brochures for various law firms",
       "highlights": []
     },
     {
       "company": "RX Strategies, Inc.",
       "position": "Web Application Developer (Contract: ProjectCC)",
       "website": "http://rxstrategies.com",
-      "startDate": "2003-01",
-      "endDate": "2003-03",
-      "summary": "Designed and helped develop the user interface of a Web­based drug pricing and prescription-writing application for use in community health centers.",
+      "startDate": "2003-01-01",
+      "endDate": "2003-03-31",
+      "summary": "Designed and helped develop the user interface of a Web­based drug pricing and prescription-writing application for use in community health centers",
       "highlights": []
     },
     {
       "company": "Blue Cross Blue Shield fo Florida",
       "position": "Web Developer (Contract: Modis)",
       "website": "https://www.floridablue.com",
-      "startDate": "2002-09",
-      "endDate": "2002-12",
-      "summary": "Designed and developed a Web­based HIPAA training course and certification system with reporting integration.",
+      "startDate": "2002-09-01",
+      "endDate": "2002-12-31",
+      "summary": "Designed and developed a Web­based HIPAA training course and certification system with reporting integration",
       "highlights": []
     },
     {
       "company": "Blue Cross Blue Shield fo Florida",
       "position": "Web Developer (Contract: Modis)",
       "website": "https://www.floridablue.com",
-      "startDate": "2001-11",
-      "endDate": "2002-04",
-      "summary": "Worked on a team to develop web-based interactive tutorials. Created a tutorial help system. Performed various graphic design duties.",
+      "startDate": "2001-11-01",
+      "endDate": "2002-04-30",
+      "summary": "Worked on a team to develop web-based interactive tutorials, created its help system, and performed various graphic design duties",
       "highlights": []
     },
     {
       "company": "Creative Impact Communications (Defunct)",
       "position": "Web Developer/Production Artist",
       "website": "",
-      "startDate": "2000-12",
-      "endDate": "2001-05",
-      "summary": "Produced and developed client projects, including websites and email campaigns. Replatformed the corporate website, including the intranet and extranet sales/customer management system.",
+      "startDate": "2000-12-01",
+      "endDate": "2001-05-31",
+      "summary": "Produced and developed client projects, including websites and email campaigns; replatformed the corporate website, including the intranet and extranet sales/customer management system",
       "highlights": []
     },
     {
       "company": "MortgageFlex",
       "position": "UI Specialist/Javascript Developer (Contract: Matlen Silver)",
       "website": "http://www.mortgageflex.com",
-      "startDate": "2000-08",
-      "endDate": "2000-09",
-      "summary": "Developed markup, styling, and javascript to match the existing desktop product. Ported several mortgage and finance­related calculators from various programming languages to Javascript.",
+      "startDate": "2000-08-01",
+      "endDate": "2000-09-30",
+      "summary": "Developed markup, styling, and javascript to match the existing desktop product; ported several mortgage and finance­related calculators from various programming languages to Javascript",
       "highlights": []
     },
     {
       "company": "Website Pros (Web.com)",
       "position": "Web Production Designer",
       "website": "https://www.web.com",
-      "startDate": "1999-03",
-      "endDate": "2000-06",
-      "summary": "Helped spearhead various products and services, including e­commerce development, template design and general web development. Performed various other tasks, from copywriting and proofreading to market analysis.",
+      "startDate": "1999-03-01",
+      "endDate": "2000-06-30",
+      "summary": "Helped spearhead various products and services, including e­commerce development, template design and general web development; performed various other tasks, from copywriting and proofreading to market analysis",
       "highlights": []
-    },
-    {}
+    }
   ]
 }

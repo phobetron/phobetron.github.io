@@ -3,5 +3,105 @@ layout: site
 ---
 
 <header>
-  <h1>Charles Hudson</h1>
+  <div>
+    <h1>{{ site.data.resume.basics.name }}</h1>
+
+    <p>{{ site.data.resume.basics.label }}</p>
+  </div>
 </header>
+
+<main>
+  <address>
+    <dl>
+      <dt>Location</dt>
+      <dd>
+        {{ site.data.resume.basics.location.city }},
+        {{ site.data.resume.basics.location.region }}
+      </dd>
+
+      <dt>Email</dt>
+      <dd>
+        <a href="mailto:{{ site.data.resume.basics.email }}">
+          {{ site.data.resume.basics.email }}
+        </a>
+      </dd>
+
+      <dt>Website</dt>
+      <dd>
+        <a href="{{ site.data.resume.basics.website }}">
+          {{ site.data.resume.basics.website }}
+        </a>
+      </dd>
+
+      {% for profile in site.data.resume.basics.profiles %}
+        <dt>{{ profile.network }}</dt>
+        <dd>
+          <a href="{{ profile.url }}">{{ profile.url }}</a>
+        </dd>
+      {% endfor %}
+    </dl>
+  </address>
+
+  <section>
+    <h2>Summary</h2>
+
+    <p>{{ site.data.resume.basics.summary }}</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+
+    {% for skillset in site.data.resume.skills %}
+      <section>
+        <h3>{{ skillset.name }}</h3>
+
+        <ul>
+          {% for skill in skillset.keywords %}
+            <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+
+    {% for entry in site.data.resume.work %}
+      <article>
+        <header>
+          <h3>{{ entry.company }}</h3>
+
+          <p>{{ entry.position }}</p>
+
+          <dl>
+            <dt>Start</dt>
+            <dd>
+              <time datetime="{{ entry.startDate }}">
+                {{ entry.startDate | date: "%b %Y" }}
+              </time>
+            </dd>
+
+            <dt>End</dt>
+            <dd>
+              <time datetime="{{ entry.endDate }}">
+                {{ entry.endDate | date: "%b %Y" }}
+              </time>
+            </dd>
+          </dl>
+        </header>
+
+        <p>{{ entry.summary }}</p>
+
+        <ul>
+          {% for hl in  entry.highlights %}
+            <li>{{ hl }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+    {% endfor %}
+  </section>
+</main>
+
+<footer>
+</footer>
