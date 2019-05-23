@@ -1,0 +1,23 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 250 250">
+  <defs>
+    <g id="b">
+      <g id="q">
+        <path id="ray" d="M0,0 -47.4,-360 47.4,-360 z" />
+        <use href="#ray" transform="rotate(30)"/>
+        <use href="#ray" transform="rotate(60)"/>
+      </g>
+      <use href="#q" transform="rotate(90)"/>
+      <use href="#q" transform="rotate(180)"/>
+      <use href="#q" transform="rotate(270)"/>
+    </g>
+  </defs>
+  <radialGradient id="g" cx="1" cy="1" r="1">
+    <stop offset="0%" stop-color="#eee" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#eee"/>
+  </radialGradient>
+  <g transform="translate(0,250)">
+    <use href="#b" fill="url(#g)"/>
+  </g>
+</svg>

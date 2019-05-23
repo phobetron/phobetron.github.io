@@ -8,47 +8,41 @@ layout: site
 
     <p>{{ site.data.resume.basics.label }}</p>
   </div>
-</header>
 
-<main>
   <address>
     <dl>
-      <dt>Location</dt>
-      <dd>
-        {{ site.data.resume.basics.location.city }},
-        {{ site.data.resume.basics.location.region }}
-      </dd>
-
       <dt>Email</dt>
       <dd>
-        <a href="mailto:{{ site.data.resume.basics.email }}">
-          {{ site.data.resume.basics.email }}
-        </a>
+      <a href="mailto:{{ site.data.resume.basics.email }}">
+        {{ site.data.resume.basics.email }}
+      </a>
       </dd>
 
       <dt>Website</dt>
       <dd>
-        <a href="{{ site.data.resume.basics.website }}">
-          {{ site.data.resume.basics.website }}
-        </a>
+      <a href="{{ site.data.resume.basics.website }}">
+        {{ site.data.resume.basics.website }}
+      </a>
       </dd>
 
       {% for profile in site.data.resume.basics.profiles %}
         <dt>{{ profile.network }}</dt>
         <dd>
-          <a href="{{ profile.url }}">{{ profile.url }}</a>
+        <a href="{{ profile.url }}">{{ profile.url }}</a>
         </dd>
       {% endfor %}
     </dl>
   </address>
+</header>
 
-  <section>
+<main>
+  <section class="summary">
     <h2>Summary</h2>
 
     <p>{{ site.data.resume.basics.summary }}</p>
   </section>
 
-  <section>
+  <section class="skills">
     <h2>Skills</h2>
 
     {% for skillset in site.data.resume.skills %}
@@ -64,31 +58,31 @@ layout: site
     {% endfor %}
   </section>
 
-  <section>
+  <section class="experience">
     <h2>Work Experience</h2>
 
     {% for entry in site.data.resume.work %}
-      <article>
+      <article class="{% if entry.endDate < '2010-01-01' %}old{% endif %}">
         <header>
           <h3>{{ entry.company }}</h3>
-
-          <p>{{ entry.position }}</p>
 
           <dl>
             <dt>Start</dt>
             <dd>
-              <time datetime="{{ entry.startDate }}">
-                {{ entry.startDate | date: "%b %Y" }}
-              </time>
+            <time datetime="{{ entry.startDate }}">
+              {{ entry.startDate | date: "%b %Y" }}
+            </time>
             </dd>
 
             <dt>End</dt>
             <dd>
-              <time datetime="{{ entry.endDate }}">
-                {{ entry.endDate | date: "%b %Y" }}
-              </time>
+            <time datetime="{{ entry.endDate }}">
+              {{ entry.endDate | date: "%b %Y" }}
+            </time>
             </dd>
           </dl>
+
+          <p>{{ entry.position }}</p>
         </header>
 
         <p>{{ entry.summary }}</p>

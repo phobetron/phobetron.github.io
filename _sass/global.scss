@@ -1,48 +1,38 @@
-address {
-  font-style: normal;
+* {
+  box-sizing: border-box;
 }
-
-dt {
-  float: left;
-  margin-right: .5em;
-}
-dd {
-  margin: 0;
-
-  &::after {
-    clear: left;
-    content: '';
-    display: block;
-    line-height: 1px;
-  }
-}
-
 html {
+  font-size: .8em;
   height: 100%;
 }
 body {
+  background: $bg;
+  color: $fg;
   display: grid;
   font-family: Arial;
-  grid-template-rows: 10em auto 4em;
+  grid-template-rows: auto auto 4rem;
   margin: 0;
   min-height: 100%;
 
   > header {
-    background: red;
-    color: white;
+    background-color: $header-bg;
+    background-image: url('#{$baseurl}/assets/images/burst.svg');
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $header-fg;
     grid-row: 1;
-    height: 10em;
-    position: relative;
-    text-align: center;
-    width: 100%;
+    padding: 1ex 1rem;
 
     > div {
       font-family: 'Russo One', sans-serif;
-      text-shadow: .1em .1em .1em black;
+      font-size: 1.4em;
+      text-shadow: 0 .1em .1em $header-fg-shadow;
       text-transform: uppercase;
     }
 
     h1, p {
+      font-weight: normal;
       margin: 0;
     }
     p {
@@ -52,13 +42,13 @@ body {
 
   > footer {
     grid-row: 3;
-    margin: 1em;
+    margin: 1rem;
   }
 }
 
 main {
   grid-row: 2;
-  margin: 1em;
+  margin: 1rem;
 }
 
 main, footer {
@@ -70,30 +60,179 @@ main, footer {
   }
 }
 
-.page-resume address {
-  background: #eee;
-  margin: -1em -1em 1em -1em;
-  padding: 1em;
+address {
+  font-style: normal;
+}
 
-  dl {
-    font-size: .75em;
+dl {
+  display: flex;
+  flex-flow: row wrap;
+}
+dt, dd {
+  padding-bottom: .5ex;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+dt {
+  flex-basis: 18%;
+  padding-right: 2%;
+  text-align: right;
+}
+dd {
+  flex-basis: 80%;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.page-resume {
+  h2, .skills h3 {
+    background: $header-bg;
+    color: $header-fg;
+    font-family: 'Russo One', sans-serif;
+    font-weight: normal;
+    margin: 0 -1rem;
+    padding: .5ex 1rem;
+    text-shadow: 0 .1em .1em $header-fg-shadow;
+    text-transform: uppercase;
+  }
+
+  address {
+    background: $section-bg;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 1ex 1rem;
+
+    dl {
+      font-size: .9em;
+      margin: 0;
+    }
+  }
+}
+
+.summary, .skills {
+  h2 {
+    display: none;
+  }
+}
+
+.skills {
+  section {
+    background: $section-bg;
+    margin: 0 -1rem;
+    padding: 0 1rem 1ex;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  ul {
+    font-size: .9em;
+    list-style-type: none;
     margin: 0;
+    padding: 1ex 0 0;
+  }
+  li {
+    display: inline;
+
+    &:not(:last-of-type)::after {
+      content: ',';
+    }
+  }
+}
+
+.experience {
+  article {
+    margin: 0 0 1em 0;
+  }
+  header {
+    margin: 0 -1rem;
+    padding: 1ex 1rem;
+    background: $section-bg;
+
+    h3, dl, p {
+      margin: 0;
+    }
+    p {
+      font-style: italic;
+
+      &::before {
+        clear: both;
+        content: '';
+        display: block;
+        height: 1px;
+        overflow: hidden;
+      }
+    }
+  }
+  h3 {
+    float: left;
+    max-width: 60%;
+  }
+  dl {
+    display: block;
+    float: right;
   }
   dt {
-    width: 4em;
+    display: none;
+  }
+  dd {
+    display: inline;
+
+    &:first-of-type::after {
+      content: '-';
+    }
+  }
+  ul {
+    margin: 0;
+    padding-left: 1em;
+  }
+
+  .old {
+    font-size: .7em;
   }
 }
 
 @media (min-width: 1024px) {
+  html {
+    font-size: 1em;
+  }
   body {
+    grid-template-rows: 10rem auto 4rem;
+
     > header {
-      perspective: 30em;
+      height: 100%;
+      position: relative;
 
       > div {
-        bottom: 1em;
-        left: 2em;
+        bottom: .5rem;
+        left: 1rem;
         position: absolute;
-        transform: scale(2.5, 1) rotate3d(0, -1, -0.125, 45deg);
+      }
+    }
+  }
+  .page-resume {
+    address {
+      background: transparent;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      bottom: .5rem;
+      width: 24em;
+    }
+  }
+}
+
+@media print {
+  body {
+    display: block;
+  }
+
+  .page-resume {
+    article {
+      break-inside: avoid;
+
+      &:not(.old) + .old {
+        page-break-before: always;
       }
     }
   }
