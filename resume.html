@@ -3,13 +3,11 @@ layout: site
 ---
 
 <header>
-  <div>
-    <h1>{{ site.data.resume.basics.name }}</h1>
+  <h1>{{ site.data.resume.basics.name }}</h1>
+</header>
 
-    <p>{{ site.data.resume.basics.label }}</p>
-  </div>
-
-  <address>
+<main>
+  <address class="contact">
     <dl>
       <dt>Email</dt>
       <dd>
@@ -21,23 +19,21 @@ layout: site
       <dt>Website</dt>
       <dd>
       <a href="{{ site.data.resume.basics.website }}">
-        {{ site.data.resume.basics.website }}
+        {{ site.data.resume.basics.website | replace: 'https://', '' }}
       </a>
       </dd>
 
       {% for profile in site.data.resume.basics.profiles %}
         <dt>{{ profile.network }}</dt>
         <dd>
-        <a href="{{ profile.url }}">{{ profile.url }}</a>
+        <a href="{{ profile.url }}">{{ profile.url | replace: 'https://', '' }}</a>
         </dd>
       {% endfor %}
     </dl>
   </address>
-</header>
 
-<main>
   <section class="summary">
-    <h2>Summary</h2>
+    <h2>{{ site.data.resume.basics.label }}</h2>
 
     <p>{{ site.data.resume.basics.summary }}</p>
   </section>
@@ -96,6 +92,3 @@ layout: site
     {% endfor %}
   </section>
 </main>
-
-<footer>
-</footer>

@@ -14,10 +14,10 @@
     </g>
   </defs>
   <radialGradient id="g" cx="1" cy="1" r="1">
-    <stop offset="0%" stop-color="#eee" stop-opacity="0"/>
-    <stop offset="100%" stop-color="#eee"/>
+    <stop offset="0%" stop-color="#bbb" stop-opacity="0"/>
+    <stop offset="75%" stop-color="#eee"/>
   </radialGradient>
-  <g transform="translate(0,250)">
+  <g transform="translate(0,250) rotate(15)">
     <use href="#b" fill="url(#g)"/>
   </g>
 </svg>
