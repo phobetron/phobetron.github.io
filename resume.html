@@ -1,5 +1,6 @@
 ---
 layout: site
+title: Resume
 ---
 
 <header>
@@ -11,28 +12,40 @@ layout: site
     <h2 class="section__heading">Contact</h2>
 
     <address>
-      <dl class="contact-list">
-        <dt class="contact-list__item">Email</dt>
-        <dd class="contact-list__value">
+      <ul class="contact-list">
+        <li class="contact-list__item">
           <a href="mailto:{{ site.data.resume.basics.email }}">
+            <svg class="icon-email" role="img" aria-labelledby="title-email">
+              <title id="title-email"></title>
+              <use xlink:href="#sprite-email" fill="currentColor" />
+            </svg>
             {{ site.data.resume.basics.email }}
           </a>
-        </dd>
+        </li>
 
-        <dt class="contact-list__item">Website</dt>
-        <dd class="contact-list__value">
+        <li class="contact-list__item">
           <a href="{{ site.data.resume.basics.website }}">
+            <svg class="icon-website" role="img" aria-labelledby="title-website">
+              <title id="title-website"></title>
+              <use xlink:href="#sprite-website" fill="currentColor" />
+            </svg>
             {{ site.data.resume.basics.website | replace: 'https://', '' }}
           </a>
-        </dd>
+        </li>
 
         {% for profile in site.data.resume.basics.profiles %}
-          <dt class="contact-list__item">{{ profile.network }}</dt>
-          <dd class="contact-list__value">
-            <a href="{{ profile.url }}">{{ profile.url | replace: 'https://', '' }}</a>
-          </dd>
+          {% assign type = profile.network | downcase %}
+          <li class="contact-list__item">
+            <a href="{{ profile.url }}">
+              <svg class="icon-{{ type }}" role="img" aria-labelledby="title-{{ type }}">
+                <title id="title-{{ type }}">{{ profile.network }}</title>
+                <use xlink:href="#sprite-{{ type }}" fill="currentColor" />
+              </svg>
+              {{ profile.url | replace: 'https://', '' }}
+            </a>
+          </li>
         {% endfor %}
-      </dl>
+      </ul>
     </address>
   </section>
 

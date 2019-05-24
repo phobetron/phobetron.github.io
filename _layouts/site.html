@@ -6,6 +6,8 @@
     {% comment %}{% include styles.html %}{% endcomment %}
   </head>
   <body class="page-{{ page.name | split: '.' | first }}">
+    {% include sprites.html %}
+
     {{ content }}
 
     {% comment %}{% include scripts.html %}{% endcomment %}

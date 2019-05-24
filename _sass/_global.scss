@@ -42,11 +42,8 @@ body {
 }
 main, body > article {
   grid-row: 2;
-  padding: 1rem;
 
   > section, > article {
-    margin-left: -1rem;
-    margin-right: -1rem;
     padding: 1em 1rem 1.5em;
   }
 }
@@ -91,7 +88,6 @@ dt, dd {
 dt {
   flex-basis: 25%;
   padding-right: 1em;
-  text-align: right;
 }
 dd {
   flex-basis: 75%;
@@ -109,12 +105,14 @@ li {
   position: relative;
 
   &::before {
-    color: $section-bullet;
-    content: '✯';
+    color: $bullet;
+    content: $bullet-image;
     display: block;
+    height: .75em;
     left: 0;
-    line-height: 1;
     position: absolute;
+    top: 0;
+    width: .75em;
   }
 }
 
@@ -141,9 +139,7 @@ li {
   }
   main, body > article {
     > section, > article {
-      padding: 0 1rem;
-      margin-left: 0;
-      margin-right: 0;
+      padding: 0 2rem;
     }
   }
 }

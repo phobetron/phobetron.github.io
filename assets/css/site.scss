@@ -3,6 +3,10 @@
 
 $baseurl: '{{ site.baseurl }}';
 
+@function escape_hex_color($c) {
+  @return '%23#{str-slice('#{$c}', 2)}'
+}
+
 @import 'colors';
 @import 'properties';
 @import 'global';

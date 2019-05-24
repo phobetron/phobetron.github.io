@@ -2,12 +2,12 @@
   grid-template-rows: auto auto;
 
   .section, .subsection {
-    margin: 1em -1rem 1.5em;
+    margin: 1em 0 1.5em;
     padding: 0 1rem;
   }
 
-  .section:not(.section--contact):first-of-type,
-  .section:not(.section--skills) .subsection:first-of-type {
+  .section:first-of-type,
+  .section .subsection:first-of-type {
     margin-top: 0;
   }
   .section {
@@ -21,29 +21,21 @@
       text-shadow: $header-shadow;
     }
 
+    &--contact, &--summary, &--skills, &--experience {
+      .section__heading {
+        display: none;
+      }
+    }
     &--contact {
       background: $section-bg;
-      margin-top: -1rem;
       margin-bottom: 0;
       padding: 1rem;
-
-      .section__heading {
-        display: none;
-      }
-    }
-    &--summary {
-      .section__heading {
-        display: none;
-      }
-    }
-    &--skills {
-      padding-top: 0;
-    }
-    &--experience {
-      padding-top: 0;
     }
   }
   .subsection {
+    margin-left: -1rem;
+    margin-right: -1rem;
+
     &__header {
       margin: 0 -1rem;
       padding: 1ex 1rem;
@@ -79,12 +71,34 @@
   }
 
   .contact-list {
-    font-size: .9em;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: .875em;
     margin: 0;
+
+    li {
+      flex-basis: 50%;
+      padding: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+    svg {
+      height: 1em;
+      vertical-align: middle;
+      width: 1em;
+
+      &.icon-linkedin {
+        vertical-align: baseline;
+      }
+    }
   }
 
   .date-range {
     display: block;
+    font-size: .9em;
+    line-height: 1.55em;
     margin: 0;
 
     &__ordinal {
@@ -128,41 +142,61 @@
 
     main {
       display: grid;
-      grid: auto auto / 20em auto;
+      grid: auto auto / 18em auto;
       grid-column-gap: 1em;
     }
 
-    .section, .subsection {
-      margin-left: 0;
-      margin-right: 0;
-    }
     .section {
-      &:not(.section--contact) {
-        margin: 0;
-      }
+      margin: 0;
 
       &__heading {
         margin: 0;
       }
 
+      &--contact, &--skills {
+        padding-left: 2rem;
+
+        .subsection {
+          margin-left: -2rem;
+          margin-right: 0;
+          padding-left: 2rem;
+        }
+      }
       &--contact {
         grid-column: 1;
       }
       &--summary {
+        align-self: center;
         grid-column: 2;
+        padding-right: 2rem;
       }
       &--skills {
         background: $section-bg;
         grid-column: 1;
-        padding: 0;
+        padding-top: 1ex;
       }
       &--experience {
         grid-column: 2;
         padding: 0;
 
         .subsection {
-          padding: 0 1rem;
+          padding-right: 2rem;
+          margin-left: 0;
+          margin-right: 0;
+
+          &__header {
+            margin-right: -2rem;
+            padding-right: 2rem;
+          }
         }
+      }
+    }
+
+    .contact-list {
+      font-size: .9em;
+
+      li {
+        flex-basis: 100%;
       }
     }
 
