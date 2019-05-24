@@ -73,7 +73,6 @@
   .contact-list {
     display: flex;
     flex-flow: row wrap;
-    font-size: .875em;
     margin: 0;
 
     li {
@@ -82,6 +81,9 @@
 
       &::before {
         display: none;
+      }
+      &:nth-child(4n-3), &:nth-child(4n-2) {
+        margin-bottom: 2ex;
       }
     }
     svg {
@@ -193,10 +195,15 @@
     }
 
     .contact-list {
-      font-size: .9em;
-
       li {
         flex-basis: 100%;
+
+        &:nth-child(n) {
+          margin-bottom: 1.5ex;
+        }
+        &:last-of-type {
+          margin: 0;
+        }
       }
     }
 

@@ -14,16 +14,6 @@ title: Resume
     <address>
       <ul class="contact-list">
         <li class="contact-list__item">
-          <a href="mailto:{{ site.data.resume.basics.email }}">
-            <svg class="icon-email" role="img" aria-labelledby="title-email">
-              <title id="title-email"></title>
-              <use xlink:href="#sprite-email" fill="currentColor" />
-            </svg>
-            {{ site.data.resume.basics.email }}
-          </a>
-        </li>
-
-        <li class="contact-list__item">
           <a href="{{ site.data.resume.basics.website }}">
             <svg class="icon-website" role="img" aria-labelledby="title-website">
               <title id="title-website"></title>
@@ -41,10 +31,20 @@ title: Resume
                 <title id="title-{{ type }}">{{ profile.network }}</title>
                 <use xlink:href="#sprite-{{ type }}" fill="currentColor" />
               </svg>
-              {{ profile.url | replace: 'https://', '' }}
+              {{ profile.username }}
             </a>
           </li>
         {% endfor %}
+
+        <li class="contact-list__item">
+          <a href="mailto:{{ site.data.resume.basics.email }}">
+            <svg class="icon-email" role="img" aria-labelledby="title-email">
+              <title id="title-email"></title>
+              <use xlink:href="#sprite-email" fill="currentColor" />
+            </svg>
+            {{ site.data.resume.basics.email }}
+          </a>
+        </li>
       </ul>
     </address>
   </section>
