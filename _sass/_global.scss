@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: .8em;
+  height: 100%;
+}
+body {
+  background: $bg;
+  color: $fg;
+  display: grid;
+  font-family: Arial;
+  grid-template-rows: auto auto 5rem;
+  line-height: 1.2;
+  margin: 0;
+  min-height: 100%;
+
+  > header {
+    background-color: $header-bg;
+    background-image: url('#{$baseurl}/assets/images/burst.svg');
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $header-fg;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.4em;
+    grid-row: 1;
+    padding: 1ex 1rem;
+
+    h1 {
+      font-weight: normal;
+      margin: 0;
+      text-align: center;
+      text-shadow: $header-shadow;
+    }
+  }
+
+  > footer {
+    grid-row: 3;
+    padding: 1rem;
+  }
+}
+main, body > article {
+  grid-row: 2;
+  padding: 1rem;
+
+  > section, > article {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 1em 1rem 1.5em;
+  }
+}
+
+a {
+  color: $link;
+
+  &:hover {
+    color: $link-hover;
+  }
+  &:active {
+    color: $link-active;
+  }
+  &:visited {
+    color: $link-visited;
+
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+address {
+  font-style: normal;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+dl {
+  display: flex;
+  flex-flow: row wrap;
+}
+dt, dd {
+  padding-bottom: .5ex;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+dt {
+  flex-basis: 25%;
+  padding-right: 1em;
+  text-align: right;
+}
+dd {
+  flex-basis: 75%;
+  flex-grow: 1;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+li {
+  margin-bottom: .25ex;
+  padding-left: 1em;
+  position: relative;
+
+  &::before {
+    color: $section-bullet;
+    content: '✯';
+    display: block;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+  }
+}
+
+@media print, (min-width: 1024px) {
+  html {
+    font-size: 1em;
+  }
+  body {
+    grid-template-rows: 10rem auto 5rem;
+
+    > header, > footer {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    > header {
+      position: relative;
+
+      h1 {
+        bottom: .5rem;
+        left: 2rem;
+        position: absolute;
+      }
+    }
+  }
+  main, body > article {
+    > section, > article {
+      padding: 0 1rem;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+@media print {
+  html {
+    font-size: .65em;
+  }
+  body {
+    display: block;
+
+    > header {
+      height: 1.5in;
+      padding: 1ex .5in;
+
+      h1 {
+        left: .5in;
+        padding-left: 2rem;
+      }
+    }
+  }
+}

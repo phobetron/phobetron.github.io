@@ -7,83 +7,87 @@ layout: site
 </header>
 
 <main>
-  <address class="contact">
-    <dl>
-      <dt>Email</dt>
-      <dd>
-      <a href="mailto:{{ site.data.resume.basics.email }}">
-        {{ site.data.resume.basics.email }}
-      </a>
-      </dd>
+  <section class="section section--contact">
+    <h2 class="section__heading">Contact</h2>
 
-      <dt>Website</dt>
-      <dd>
-      <a href="{{ site.data.resume.basics.website }}">
-        {{ site.data.resume.basics.website | replace: 'https://', '' }}
-      </a>
-      </dd>
-
-      {% for profile in site.data.resume.basics.profiles %}
-        <dt>{{ profile.network }}</dt>
-        <dd>
-        <a href="{{ profile.url }}">{{ profile.url | replace: 'https://', '' }}</a>
+    <address>
+      <dl class="contact-list">
+        <dt class="contact-list__item">Email</dt>
+        <dd class="contact-list__value">
+          <a href="mailto:{{ site.data.resume.basics.email }}">
+            {{ site.data.resume.basics.email }}
+          </a>
         </dd>
-      {% endfor %}
-    </dl>
-  </address>
 
-  <section class="summary">
-    <h2>{{ site.data.resume.basics.label }}</h2>
+        <dt class="contact-list__item">Website</dt>
+        <dd class="contact-list__value">
+          <a href="{{ site.data.resume.basics.website }}">
+            {{ site.data.resume.basics.website | replace: 'https://', '' }}
+          </a>
+        </dd>
+
+        {% for profile in site.data.resume.basics.profiles %}
+          <dt class="contact-list__item">{{ profile.network }}</dt>
+          <dd class="contact-list__value">
+            <a href="{{ profile.url }}">{{ profile.url | replace: 'https://', '' }}</a>
+          </dd>
+        {% endfor %}
+      </dl>
+    </address>
+  </section>
+
+  <section class="section section--summary">
+    <h2 class="section__heading">{{ site.data.resume.basics.label }}</h2>
 
     <p>{{ site.data.resume.basics.summary }}</p>
   </section>
 
-  <section class="skills">
-    <h2>Skills</h2>
+  <section class="section section--skills">
+    <h2 class="section__heading">Skills</h2>
 
     {% for skillset in site.data.resume.skills %}
-      <section>
-        <h3>{{ skillset.name }}</h3>
+      <section class="subsection">
+        <h3 class="subsection__heading">{{ skillset.name }}</h3>
 
-        <ul>
+        <ul class="inline-list">
           {% for skill in skillset.keywords %}
-            <li>{{ skill }}</li>
+            <li class="inline-list__item">{{ skill }}</li>
           {% endfor %}
         </ul>
       </section>
     {% endfor %}
   </section>
 
-  <section class="experience">
-    <h2>Work Experience</h2>
+  <section class="section section--experience">
+    <h2 class="section__heading">Experience</h2>
 
     {% for entry in site.data.resume.work %}
-      <article class="{% if entry.endDate < '2010-01-01' %}old{% endif %}">
-        <header>
-          <h3>{{ entry.company }}</h3>
+      <article class="subsection{% if entry.endDate < '2010-01-01' %} subsection--old{% endif %}">
+        <header class="subsection__header">
+          <h3 class="subsection__heading">{{ entry.company }}</h3>
 
-          <dl>
-            <dt>Start</dt>
-            <dd>
-            <time datetime="{{ entry.startDate }}">
-              {{ entry.startDate | date: "%b %Y" }}
-            </time>
+          <dl class="date-range">
+            <dt class="date-range__ordinal">Start</dt>
+            <dd class="date-range__date">
+              <time datetime="{{ entry.startDate }}">
+                {{ entry.startDate | date: "%b %Y" }}
+              </time>
             </dd>
 
-            <dt>End</dt>
-            <dd>
-            <time datetime="{{ entry.endDate }}">
-              {{ entry.endDate | date: "%b %Y" }}
-            </time>
+            <dt class="date-range__ordinal">End</dt>
+            <dd class="date-range__date">
+              <time datetime="{{ entry.endDate }}">
+                {{ entry.endDate | date: "%b %Y" }}
+              </time>
             </dd>
           </dl>
 
-          <p>{{ entry.position }}</p>
+          <p class="subsection__subheading">{{ entry.position }}</p>
         </header>
 
         <p>{{ entry.summary }}</p>
 
-        <ul>
+        <ul class="highlights">
           {% for hl in  entry.highlights %}
             <li>{{ hl }}</li>
           {% endfor %}

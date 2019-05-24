@@ -4,4 +4,6 @@
 $baseurl: '{{ site.baseurl }}';
 
 @import 'colors';
+@import 'properties';
 @import 'global';
+@import 'resume';
