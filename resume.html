@@ -10,15 +10,13 @@ title: Resume
 <main>
   <div class="print-grid-row">
     <section class="section section--contact">
-      <h2 class="section__heading">Contact</h2>
-
       <address>
         <ul class="contact-list">
           <li class="contact-list__item">
             <a href="{{ site.data.resume.basics.website }}">
               <svg class="icon-website" role="img" aria-labelledby="title-website">
                 <title id="title-website"></title>
-                <use xlink:href="#sprite-website" fill="currentColor" />
+                <use xlink:href="#sprite-chh-seal" fill="currentColor" />
               </svg>
               {{ site.data.resume.basics.website | replace: 'https://', '' }}
             </a>
@@ -51,8 +49,6 @@ title: Resume
     </section>
 
     <section class="section section--summary">
-      <h2 class="section__heading">{{ site.data.resume.basics.label }}</h2>
-
       <p>{{ site.data.resume.basics.summary }}</p>
     </section>
   </div>
@@ -62,7 +58,7 @@ title: Resume
       <h2 class="section__heading">Skills</h2>
 
       {% for skillset in site.data.resume.skills %}
-        <section class="subsection">
+        <section class="subsection subsection--{{ skillset.name | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
           <h3 class="subsection__heading">{{ skillset.name }}</h3>
 
           <ul class="inline-list">
@@ -77,8 +73,20 @@ title: Resume
     <section class="section section--experience">
       <h2 class="section__heading">Experience</h2>
 
+      {% assign cutoff = false %}
       {% for entry in site.data.resume.work %}
-        <article class="subsection{% if entry.endDate < '2010-01-01' %} subsection--old{% endif %}">
+        {% if entry.endDate < '2010-01-01' %}
+          {% assign old = true %}
+        {% else %}
+          {% assign old = false %}
+        {% endif %}
+
+        {% if old == true and cutoff == false %}
+          <h2 class="section__heading section__heading--old">Experience (Continued)</h2>
+          {% assign cutoff = true %}
+        {% endif %}
+
+        <article class="subsection{% if old %} subsection--old{% endif %}">
           <header class="subsection__header">
             <h3 class="subsection__heading">{{ entry.company }}</h3>
 

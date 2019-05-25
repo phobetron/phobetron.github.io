@@ -16,20 +16,18 @@
   }
   .section {
     &__heading {
-      background: $section-header-bg;
       color: $header-fg;
       font-family: 'Russo One', sans-serif;
       font-weight: normal;
       margin: 0 -1rem;
       padding: .5ex 1rem;
       text-shadow: $header-shadow;
-    }
 
-    &--contact, &--summary, &--skills, &--experience {
-      .section__heading {
-        display: none;
+      &--old {
+        font-size: 1.15em;
       }
     }
+
     &--contact {
       background: $section-bg;
       margin-bottom: 0;
@@ -57,20 +55,16 @@
       margin: 0;
     }
     &__subheading {
+      clear: both;
+      font-family: Times New Roman, serif;
       font-style: italic;
       margin: 0;
-
-      &::before {
-        clear: both;
-        content: '';
-        display: block;
-        height: 1px;
-        overflow: hidden;
-      }
+      padding-top: 1ex;
     }
 
     &--old {
       font-size: .7em;
+      margin: 0;
     }
   }
 
@@ -96,7 +90,7 @@
       width: 1em;
 
       &.icon-linkedin {
-        vertical-align: baseline;
+        vertical-align: text-top;
       }
     }
   }
@@ -148,16 +142,12 @@
 
     .print-grid-row {
       display: grid;
-      grid: auto / 18em auto;
+      grid: auto / 17em auto;
       grid-column-gap: 1em;
     }
 
     .section {
       margin: 0;
-
-      &__heading {
-        margin: 0;
-      }
 
       &--contact, &--skills {
         padding-left: 2rem;
@@ -179,12 +169,25 @@
       &--skills {
         background: $section-bg;
         grid-column: 1;
-        padding-top: 1ex;
+
+        .subsection {
+          &:first-of-type {
+            margin-top: 1ex;
+          }
+
+          &:not(.subsection--software-design) .inline-list {
+            display: flex;
+            flex-flow: row wrap;
+          }
+        }
       }
       &--experience {
         grid-column: 2;
         padding: 0;
 
+        .section__heading {
+          margin: 0;
+        }
         .subsection {
           padding-right: 2rem;
           margin-left: 0;
@@ -214,6 +217,7 @@
     .inline-list {
       &__item {
         display: list-item;
+        flex-basis: 50%;
         padding-left: 1em;
 
         &::before {
@@ -230,8 +234,7 @@
 @media print {
   .page-resume {
     .print-grid-row {
-      grid: auto / 24em auto;
-      grid-column-gap: .25in;
+      grid: auto / 21em auto;
     }
 
     .section.section {
@@ -252,17 +255,14 @@
           padding-right: .75in;
         }
       }
+
+      .section__heading--old {
+        margin-top: .5in;
+        page-break-before: always;
+      }
     }
     .subsection {
       break-inside: avoid;
-
-      &:not(.subsection--old) + .subsection--old {
-        page-break-before: always;
-      }
-
-      &:not(.subsection--old) + .subsection--old {
-        margin-top: .5in;
-      }
     }
   }
 }

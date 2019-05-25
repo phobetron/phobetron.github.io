@@ -1,5 +1,3 @@
-# Welcome to Jekyll!
-#
 # Site settings
 title: Charles Hudson
 email: work@charleshudson.com
@@ -14,6 +12,7 @@ host: "0.0.0.0"
 port: 8080
 
 # Build settings
+theme: null
 markdown: kramdown
 sass:
   sass_dir: _sass

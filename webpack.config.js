@@ -5,7 +5,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const UglifyJSWebpackPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
@@ -56,10 +56,12 @@ const config = {
     runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
+        default: false,
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
           chunks: 'all',
+          minChunks: 2,
         },
         styles: {
           test: /\.css$/,
@@ -71,11 +73,12 @@ const config = {
     },
     minimizer: [
       new OptimizeCSSAssetsPlugin({
+        cssProcessorOptions: { map: { inline: false } },
         cssProcessorPluginOptions: {
           preset: [ 'default', { discardComments: { removeAll: true } } ],
         },
       }),
-      new UglifyJSPlugin({
+      new UglifyJSWebpackPlugin({
         cache: true,
         parallel: true,
         sourceMap: true,
