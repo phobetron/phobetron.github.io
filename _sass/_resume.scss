@@ -69,7 +69,6 @@
 
     &--old {
       font-size: .7em;
-      margin: 0;
 
       .subsection__header {
         background: transparent;
@@ -273,6 +272,10 @@
     }
     .subsection {
       break-inside: avoid;
+
+      &--old {
+        margin: 0;
+      }
     }
   }
 }
