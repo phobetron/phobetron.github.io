@@ -10,7 +10,7 @@ body {
   color: $fg;
   display: grid;
   font-family: Arial;
-  grid-template-rows: auto auto 5rem;
+  grid-template-rows: 7rem auto 6rem;
   line-height: 1.2;
   margin: 0;
   min-height: 100%;
@@ -26,12 +26,18 @@ body {
     font-size: 1.4em;
     grid-row: 1;
     padding: 1ex 1rem;
+    text-align: center;
+    text-shadow: $header-shadow;
 
+    h1, p {
+      margin: 0;
+    }
     h1 {
       font-weight: normal;
-      margin: 0;
-      text-align: center;
-      text-shadow: $header-shadow;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 1.175em;
     }
   }
 
@@ -44,7 +50,8 @@ main, body > article {
   grid-row: 2;
 
   > section, > article {
-    padding: 1em 1rem 1.5em;
+    margin: 1em 0 1.5em;
+    padding: 0 1rem 0;
   }
 }
 
@@ -130,7 +137,7 @@ li {
     > header {
       position: relative;
 
-      h1 {
+      div {
         bottom: .5rem;
         left: 2rem;
         position: absolute;
@@ -155,9 +162,8 @@ li {
       height: 1.5in;
       padding: 1ex .5in;
 
-      h1 {
-        left: .5in;
-        padding-left: 2rem;
+      div {
+        left: .75in;
       }
     }
   }

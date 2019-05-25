@@ -1,5 +1,9 @@
 .page-resume {
-  grid-template-rows: auto auto;
+  grid-template-rows: 5rem auto;
+
+  > header > div > p {
+    display: none;
+  }
 
   .section, .subsection {
     margin: 1em 0 1.5em;
@@ -142,9 +146,9 @@
   .page-resume {
     grid-template-rows: 10rem auto;
 
-    main {
+    .print-grid-row {
       display: grid;
-      grid: auto auto / 18em auto;
+      grid: auto / 18em auto;
       grid-column-gap: 1em;
     }
 
@@ -199,7 +203,7 @@
         flex-basis: 100%;
 
         &:nth-child(n) {
-          margin-bottom: 1.5ex;
+          margin-bottom: 1ex;
         }
         &:last-of-type {
           margin: 0;
@@ -225,24 +229,39 @@
 
 @media print {
   .page-resume {
-    main {
-      grid: auto auto / 24em auto;
+    .print-grid-row {
+      grid: auto / 24em auto;
       grid-column-gap: .25in;
     }
 
+    .section.section {
+      &--contact, &--skills {
+        padding-left: .75in;
+      }
+      &--summary {
+        padding-right: .75in;
+      }
+      &--experience {
+        margin-bottom: .5in;
+
+        .subsection {
+          padding-right: .75in;
+        }
+        .subsection__header {
+          margin-right: -.75in;
+          padding-right: .75in;
+        }
+      }
+    }
     .subsection {
       break-inside: avoid;
 
       &:not(.subsection--old) + .subsection--old {
         page-break-before: always;
       }
-    }
-    .section.section {
-      &--contact, &--skills {
-        margin-left: .5in;
-      }
-      &--summary, &--experience {
-        margin-right: .5in;
+
+      &:not(.subsection--old) + .subsection--old {
+        margin-top: .5in;
       }
     }
   }

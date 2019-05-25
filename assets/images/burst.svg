@@ -13,11 +13,11 @@
       <use href="#q" transform="rotate(270)"/>
     </g>
   </defs>
-  <radialGradient id="g" cx="1" cy="1" r="1">
-    <stop offset="0%" stop-color="#bbb" stop-opacity="0"/>
-    <stop offset="75%" stop-color="#eee"/>
+  <radialGradient id="g" cx=".5" cy="1" r="1">
+    <stop offset="0%" stop-color="rgb(127, 63, 63)" stop-opacity="0"/>
+    <stop offset="100%" stop-color="rgb(127, 63, 63)"/>
   </radialGradient>
-  <g transform="translate(0,250) rotate(15)">
+  <g transform="translate(25,250)">
     <use href="#b" fill="url(#g)"/>
   </g>
 </svg>
