@@ -44,6 +44,7 @@
 
     &__heading {
       margin: 0;
+      max-width: 17em;
     }
     &__subheading {
       font-family: Times New Roman, serif;
@@ -119,6 +120,10 @@
         grid-column: 2;
         padding: 0;
       }
+    }
+
+    .subsection__heading {
+      max-width: none;
     }
 
     .inline-list {
