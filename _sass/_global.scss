@@ -9,6 +9,7 @@ a {
   }
   &:active {
     color: $link-active;
+    outline: none;
   }
   &:visited {
     color: $link-visited;
