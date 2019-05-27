@@ -128,7 +128,7 @@
       "endDate": "2016-10-31",
       "summary": "Helped create new products and maintain existing products for a Financial Technology organization",
       "highlights": [
-        "Built a customer acqusition web application using AngularJS driven by a REST API based on HATEOAS principles",
+        "Built a customer acquisition web application using AngularJS driven by a REST API based on HATEOAS principles",
         "Designed public and private REST APIs to leverage HATEOAS for better control and easier maintenance of integrations",
         "Designed various front-end build systems and API testing platforms using Node.js, Webpack, Gulp, and other technologies",
         "Created a custom Business Intelligence platform, integrated with New Relic analytics data",
