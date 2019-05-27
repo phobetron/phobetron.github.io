@@ -35,14 +35,13 @@ body {
       background: $header-nav-bg;
       color: $header-nav-fg;
       grid-row: 2;
-      padding: 1.5rem 1rem;
 
       ul {
         display: flex;
         flex-flow: row wrap;
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 1.5rem 1rem;
       }
       li, svg {
         line-height: 1em;
@@ -80,7 +79,6 @@ body {
         }
       }
     }
-
     h1 {
       font-size: 2.125em;
       font-weight: normal;
@@ -88,7 +86,6 @@ body {
       text-transform: uppercase;
     }
   }
-
   > footer {
     grid-row: 3;
     padding: 1rem;
@@ -116,29 +113,16 @@ main, body > article {
   }
 }
 
-@media print, (min-width: 1024px) {
+@media (min-width: 667px) {
   html {
-    font-size: 1em;
+    font-size: .9em;
   }
   body {
-    grid-template-rows: 14rem auto 5rem;
-
     > header {
-      grid-template-rows: 10rem 4rem;
-
       nav, address {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        text-align: center;
-
-        li {
-          &:nth-child(n) {
-            flex-basis: 25%;
-            margin: 0;
-          }
-          &:first-child {
-            text-align: left;
-          }
+        ul {
+          padding-left: 2rem;
+          padding-right: 2rem;
         }
       }
 
@@ -164,8 +148,47 @@ main, body > article {
     display: grid;
     grid: auto / 45% 45%;
     grid-column-gap: 10%;
+  }
+}
 
-    section, article {
+@media print, (min-width: 1024px) {
+  html {
+    font-size: 1em;
+  }
+  body {
+    grid-template-rows: 14rem auto 5rem;
+
+    > header {
+      grid-template-rows: 10rem 4rem;
+
+      nav, address {
+        ul {
+          text-align: center;
+        }
+
+        li {
+          &:nth-child(n) {
+            flex-basis: 25%;
+            margin: 0;
+          }
+          &:first-child {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    > header {
+      nav ul, address ul {
+        max-width: 1280px;
+      }
+    }
+    > main, > footer {
+      max-width: 1280px;
     }
   }
 }
