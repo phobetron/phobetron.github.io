@@ -14,8 +14,8 @@
     </g>
   </defs>
   <radialGradient id="g" cx=".5" cy="1" r="1">
-    <stop offset="0%" stop-color="rgb(127, 63, 63)" stop-opacity="0"/>
-    <stop offset="100%" stop-color="rgb(127, 63, 63)"/>
+    <stop offset="0%" stop-color="rgb(170, 51, 51)" stop-opacity="0"/>
+    <stop offset="100%" stop-color="rgb(170, 51, 51)"/>
   </radialGradient>
   <g transform="translate(25,250)">
     <use href="#b" fill="url(#g)"/>

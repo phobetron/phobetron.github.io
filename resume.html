@@ -5,53 +5,49 @@ title: Resume
 
 <header>
   {% include global_header.html %}
+
+  <address>
+    <ul class="contact-list">
+      <li class="contact-list__item">
+        <a href="{{ site.data.resume.basics.website }}">
+          <svg class="icon-website" role="img" aria-labelledby="title-website">
+            <title id="title-website"></title>
+            <use xlink:href="#sprite-website" fill="currentColor" />
+          </svg>
+          {{ site.data.resume.basics.website | replace: 'https://', '' }}
+        </a>
+      </li>
+
+      <li class="contact-list__item">
+        <a href="mailto:{{ site.data.resume.basics.email }}">
+          <svg class="icon-email" role="img" aria-labelledby="title-email">
+            <title id="title-email"></title>
+            <use xlink:href="#sprite-email" fill="currentColor" />
+          </svg>
+          {{ site.data.resume.basics.email }}
+        </a>
+      </li>
+
+      {% for profile in site.data.resume.basics.profiles %}
+        {% assign type = profile.network | downcase %}
+        <li class="contact-list__item">
+          <a href="{{ profile.url }}">
+            <svg class="icon-{{ type }}" role="img" aria-labelledby="title-{{ type }}">
+              <title id="title-{{ type }}">{{ profile.network }}</title>
+              <use xlink:href="#sprite-{{ type }}" fill="currentColor" />
+            </svg>
+            {{ profile.username }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </address>
 </header>
 
 <main>
-  <div class="print-grid-row">
-    <section class="section section--contact">
-      <address>
-        <ul class="contact-list">
-          <li class="contact-list__item">
-            <a href="{{ site.data.resume.basics.website }}">
-              <svg class="icon-website" role="img" aria-labelledby="title-website">
-                <title id="title-website"></title>
-                <use xlink:href="#sprite-website" fill="currentColor" />
-              </svg>
-              {{ site.data.resume.basics.website | replace: 'https://', '' }}
-            </a>
-          </li>
-
-          {% for profile in site.data.resume.basics.profiles %}
-            {% assign type = profile.network | downcase %}
-            <li class="contact-list__item">
-              <a href="{{ profile.url }}">
-                <svg class="icon-{{ type }}" role="img" aria-labelledby="title-{{ type }}">
-                  <title id="title-{{ type }}">{{ profile.network }}</title>
-                  <use xlink:href="#sprite-{{ type }}" fill="currentColor" />
-                </svg>
-                {{ profile.username }}
-              </a>
-            </li>
-          {% endfor %}
-
-          <li class="contact-list__item">
-            <a href="mailto:{{ site.data.resume.basics.email }}">
-              <svg class="icon-email" role="img" aria-labelledby="title-email">
-                <title id="title-email"></title>
-                <use xlink:href="#sprite-email" fill="currentColor" />
-              </svg>
-              {{ site.data.resume.basics.email }}
-            </a>
-          </li>
-        </ul>
-      </address>
-    </section>
-
-    <section class="section section--summary">
-      <p>{{ site.data.resume.basics.summary }}</p>
-    </section>
-  </div>
+  <section class="section section--summary">
+    <p>{{ site.data.resume.basics.summary }}</p>
+  </section>
 
   <div class="print-grid-row">
     <section class="section section--skills">
@@ -109,15 +105,23 @@ title: Resume
             <p class="subsection__subheading">{{ entry.position }}</p>
           </header>
 
-          <p>{{ entry.summary }}</p>
+          {% if old == true %}
+            <p>{{ entry.summary }}</p>
+          {% else %}
+            <ul class="highlights">
+              <li>{{ entry.summary }}</li>
 
-          <ul class="highlights">
-            {% for hl in  entry.highlights %}
-              <li>{{ hl }}</li>
-            {% endfor %}
-          </ul>
+              {% for hl in  entry.highlights %}
+                <li>{{ hl }}</li>
+              {% endfor %}
+            </ul>
+          {% endif%}
         </article>
       {% endfor %}
     </section>
   </div>
 </main>
+
+<footer>
+  {% include global_footer.html %}
+</footer>

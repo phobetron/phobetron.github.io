@@ -16,14 +16,14 @@
     },
     "profiles": [
       {
-        "network": "GitHub",
-        "username": "phobetron",
-        "url": "https://github.com/phobetron"
-      },
-      {
         "network": "LinkedIn",
         "username": "charleshhudson",
         "url": "https://linkedin.com/in/charleshhudson"
+      },
+      {
+        "network": "GitHub",
+        "username": "phobetron",
+        "url": "https://github.com/phobetron"
       }
     ]
   },
@@ -42,9 +42,9 @@
       "name": "Languages",
       "keywords": [
         "Ruby",
-        "Crystal",
-        "Elixir",
         "Javascript",
+        "Elixir",
+        "Crystal",
         "Python",
         "SQL"
       ]
@@ -72,19 +72,19 @@
         "Phoenix",
         "Django",
         "SciPy",
-        "PostgreSQL",
+        "Docker",
         "MongoDB",
-        "Docker"
+        "PostgreSQL"
       ]
     },
     {
       "name": "Systems & Tools",
       "keywords": [
         "Linux",
-        "MacOS",
-        "iOS",
-        "Vim",
         "Git",
+        "MacOS",
+        "Vim",
+        "iOS",
         "Sketch",
         "Adobe CS"
       ]
@@ -126,7 +126,7 @@
       "website": "https://zestfinance.com",
       "startDate": "2014-11-01",
       "endDate": "2016-10-31",
-      "summary": "Helped create new products as well as maintained existing products for a Financial Technology organization",
+      "summary": "Helped create new products and maintain existing products for a Financial Technology organization",
       "highlights": [
         "Built a customer acqusition web application using AngularJS driven by a REST API based on HATEOAS principles",
         "Designed public and private REST APIs to leverage HATEOAS for better control and easier maintenance of integrations",
@@ -153,7 +153,7 @@
       "website": "https://yellowpages.com",
       "startDate": "2010-03-01",
       "endDate": "2013-04-30",
-      "summary": "Helped build, maintain, update, refactor, and rebuild various features and user-facing systems for yellowpages.com and related properties",
+      "summary": "Helped build, maintain, update, refactor, and rebuild features and user-facing systems for yellowpages.com and related properties",
       "highlights": [
         "Collaborated closely with User Experience and Product Management teams",
         "Arranged mentoring sessions to help other full-stack engineers build and improve front-end skills"
@@ -165,7 +165,7 @@
       "website": "https://latimes.com",
       "startDate": "2007-12-01",
       "endDate": "2010-03-31",
-      "summary": "Helped build and maintain various user-facing sites and systems for LA Times and its then-parent Tribune Company",
+      "summary": "Helped build and maintain various user-facing sites and systems for LA Times and the Tribune Company",
       "highlights": [
         "Developed the front-end of a high-traffic entertainment photography site with an integrated authoring component",
         "Developed the front-end of an online paid classifieds site integrated with local newspaper print systems",
