@@ -84,6 +84,7 @@
 
     li {
       flex-basis: 50%;
+      line-height: 1em;
       padding: 0;
 
       &::before {
@@ -95,12 +96,8 @@
     }
     svg {
       height: 1em;
-      vertical-align: middle;
+      vertical-align: bottom;
       width: 1em;
-
-      &.icon-linkedin {
-        vertical-align: text-top;
-      }
     }
   }
 
