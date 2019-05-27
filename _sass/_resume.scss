@@ -1,10 +1,4 @@
 .page-resume {
-  > header {
-    > div > p {
-      display: none;
-    }
-  }
-
   .section {
     > :first-child {
       margin-top: 0;
@@ -63,7 +57,7 @@
     top: .25ex;
 
     &__ordinal {
-      display: none;
+      @include hide;
     }
     &__date {
       display: inline;
