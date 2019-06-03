@@ -82,7 +82,7 @@ title: Resume
           {% assign cutoff = true %}
         {% endif %}
 
-        <article class="subsection{% if old %} subsection--old{% endif %}">
+        <section class="subsection{% if old %} subsection--old{% endif %}">
           <header class="subsection__header">
             <h3 class="subsection__heading">{{ entry.company }}</h3>
 
@@ -116,7 +116,7 @@ title: Resume
               {% endfor %}
             </ul>
           {% endif%}
-        </article>
+        </section>
       {% endfor %}
     </section>
   </div>
