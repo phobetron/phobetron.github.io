@@ -83,27 +83,25 @@ title: Resume
         {% endif %}
 
         <section class="subsection{% if old %} subsection--old{% endif %}">
-          <header class="subsection__header">
-            <h3 class="subsection__heading">{{ entry.company }}</h3>
+          <h3 class="subsection__heading">{{ entry.company }}</h3>
 
-            <dl class="date-range">
-              <dt class="date-range__ordinal">Start</dt>
-              <dd class="date-range__date">
-              <time datetime="{{ entry.startDate }}">
-                {{ entry.startDate | date: "%b %Y" }}
-              </time>
-              </dd>
+          <dl class="date-range">
+            <dt class="date-range__ordinal">Start</dt>
+            <dd class="date-range__date">
+            <time datetime="{{ entry.startDate }}">
+              {{ entry.startDate | date: "%b %Y" }}
+            </time>
+            </dd>
 
-              <dt class="date-range__ordinal">End</dt>
-              <dd class="date-range__date">
-              <time datetime="{{ entry.endDate }}">
-                {{ entry.endDate | date: "%b %Y" }}
-              </time>
-              </dd>
-            </dl>
+            <dt class="date-range__ordinal">End</dt>
+            <dd class="date-range__date">
+            <time datetime="{{ entry.endDate }}">
+              {{ entry.endDate | date: "%b %Y" }}
+            </time>
+            </dd>
+          </dl>
 
-            <p class="subsection__subheading">{{ entry.position }}</p>
-          </header>
+          <p class="subsection__subheading">{{ entry.position }}</p>
 
           {% if old == true %}
             <p>{{ entry.summary }}</p>
