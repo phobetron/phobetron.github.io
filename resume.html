@@ -78,7 +78,12 @@ title: Resume
         {% endif %}
 
         {% if old == true and cutoff == false %}
-          <h2 class="section__heading section__heading--old">Experience (Continued)</h2>
+            </section>
+          </div>
+
+          <div class="print-grid-row print-grid-row--old">
+            <section class="section section--experience">
+              <h2 class="section__heading section__heading--old">Experience (Continued)</h2>
           {% assign cutoff = true %}
         {% endif %}
 

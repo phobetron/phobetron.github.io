@@ -136,8 +136,12 @@
   .page-resume {
     .print-grid-row {
       grid: auto / 14em auto;
+
+      &--old {
+        display: block;
+      }
     }
-    .section.section {
+    .section {
       .section__heading--old {
         margin-top: .75in;
         page-break-before: always;

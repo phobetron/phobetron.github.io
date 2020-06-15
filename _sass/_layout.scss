@@ -113,7 +113,7 @@ body {
   }
 }
 
-@media (min-width: 667px) {
+@media (min-width: 666px) {
   html {
     font-size: .9em;
   }
@@ -124,14 +124,6 @@ body {
           padding-left: 2rem;
           padding-right: 2rem;
         }
-      }
-
-      div {
-        justify-content: left;
-        padding: 0 2rem;
-      }
-      h1 {
-        font-size: 3em;
       }
     }
     > footer {
@@ -148,6 +140,20 @@ body {
     display: grid;
     grid: auto / 45% 45%;
     grid-column-gap: 10%;
+  }
+}
+
+@media print, (min-width: 666px) {
+  body {
+    > header {
+      div {
+        justify-content: left;
+        padding: 0 2rem;
+      }
+      h1 {
+        font-size: 3em;
+      }
+    }
   }
 }
 
@@ -205,8 +211,14 @@ body {
         padding: 0 .75in;
       }
       nav, address {
+        font-size: .95em;
         padding-left: .75in;
         padding-right: .75in;
+
+        ul {
+          padding-left: 0;
+          padding-right: 0;
+        }
       }
     }
     > main, > article {
