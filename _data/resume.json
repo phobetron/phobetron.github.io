@@ -4,15 +4,15 @@
     "label": "Software Engineer",
     "picture": "",
     "email": "work@charleshudson.com",
-    "phone": "323-963-3284",
+    "phone": "+49 151 21284193",
     "website": "https://charleshudson.com",
     "summary": "Full-Stack Software Engineer with expertise in User Experience and Service Oriented Architecture, and an extensive background in various industries and platforms",
     "location": {
-      "address": "234 W 6th St",
-      "city": "Jacksonville",
-      "region": "FL",
-      "postalCode": "32206",
-      "countryCode": "US"
+      "address": "Löwestraße 26A",
+      "city": "Berlin",
+      "region": "Berlin",
+      "postalCode": "10249",
+      "countryCode": "DE"
     },
     "profiles": [
       {
@@ -105,6 +105,18 @@
     }
   ],
   "work": [
+    {
+      "company": "Vehiculum Mobility Solutions GmbH",
+      "position": "Senior Software Engineer",
+      "website": "https://vehiculum.de",
+      "startDate": "2020-01-08",
+      "endDate": "2020-06-30",
+      "summary": "Performed primarily back-end tasks related to building and maintaining an online automotive leasing platform",
+      "highlights": [
+        "Created solutions for various third-party integrations",
+        "Helped evaluate technologies to determine architectural fit"
+      ]
+    },
     {
       "company": "LearnZillion",
       "position": "Senior Software Engineer",
