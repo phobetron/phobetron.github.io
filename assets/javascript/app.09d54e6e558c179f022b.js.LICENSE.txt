@@ -1,0 +1,177 @@
+/*!
+  * vue-router v3.3.4
+  * (c) 2020 Evan You
+  * @license MIT
+  */
+
+/*!
+ * Vue.js v2.6.11
+ * (c) 2014-2019 Evan You
+ * Released under the MIT License.
+ */
+
+/*! -!../../node_modules/babel-loader/lib!../../node_modules/vue-loader/lib??vue-loader-options!./RouteOneApp.vue?vue&type=script&lang=js& */
+
+/*! -!../../node_modules/babel-loader/lib!../../node_modules/vue-loader/lib??vue-loader-options!./RouteTwoApp.vue?vue&type=script&lang=js& */
+
+/*! -!../../node_modules/mini-css-extract-plugin/dist/loader.js??ref--2-0!../../node_modules/css-loader/dist/cjs.js??ref--2-1!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/sass-loader/dist/cjs.js??ref--2-2!../../node_modules/vue-loader/lib??vue-loader-options!./RouteOneApp.vue?vue&type=style&index=0&id=45625727&scoped=true&lang=css& */
+
+/*! -!../../node_modules/mini-css-extract-plugin/dist/loader.js??ref--2-0!../../node_modules/css-loader/dist/cjs.js??ref--2-1!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/sass-loader/dist/cjs.js??ref--2-2!../../node_modules/vue-loader/lib??vue-loader-options!./RouteTwoApp.vue?vue&type=style&index=0&id=50053481&scoped=true&lang=css& */
+
+/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./RouteOneApp.vue?vue&type=template&id=45625727&scoped=true& */
+
+/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./RouteTwoApp.vue?vue&type=template&id=50053481&scoped=true& */
+
+/*! -!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options!./App.vue?vue&type=template&id=2e015f16& */
+
+/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */
+
+/*! ../node_modules/vue-loader/lib/runtime/componentNormalizer.js */
+
+/*! ./../../timers-browserify/main.js */
+
+/*! ./../../webpack/buildin/global.js */
+
+/*! ./../process/browser.js */
+
+/*! ./../webpack/buildin/global.js */
+
+/*! ./App */
+
+/*! ./App.vue?vue&type=template&id=2e015f16& */
+
+/*! ./RouteOneApp.vue?vue&type=script&lang=js& */
+
+/*! ./RouteOneApp.vue?vue&type=style&index=0&id=45625727&scoped=true&lang=css& */
+
+/*! ./RouteOneApp.vue?vue&type=template&id=45625727&scoped=true& */
+
+/*! ./RouteTwoApp.vue?vue&type=script&lang=js& */
+
+/*! ./RouteTwoApp.vue?vue&type=style&index=0&id=50053481&scoped=true&lang=css& */
+
+/*! ./RouteTwoApp.vue?vue&type=template&id=50053481&scoped=true& */
+
+/*! ./routes */
+
+/*! @/components/RouteOneApp */
+
+/*! @/components/RouteTwoApp */
+
+/*! exports provided: default */
+
+/*! exports provided: render, staticRenderFns */
+
+/*! no exports provided */
+
+/*! no static exports found */
+
+/*! setimmediate */
+
+/*! vue */
+
+/*! vue-router */
+
+/*!*********************!*\
+  !*** ./app/App.vue ***!
+  \*********************/
+
+/*!**********************!*\
+  !*** ./app/index.js ***!
+  \**********************/
+
+/*!***********************!*\
+  !*** ./app/routes.js ***!
+  \***********************/
+
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+
+/*!****************************************!*\
+  !*** ./app/components/RouteOneApp.vue ***!
+  \****************************************/
+
+/*!****************************************!*\
+  !*** ./app/components/RouteTwoApp.vue ***!
+  \****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/process/browser.js ***!
+  \*****************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/timers-browserify/main.js ***!
+  \************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/vue/dist/vue.runtime.esm.js ***!
+  \**************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/setimmediate/setImmediate.js ***!
+  \***************************************************/
+
+/*!****************************************************!*\
+  !*** ./app/App.vue?vue&type=template&id=2e015f16& ***!
+  \****************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/vue-router/dist/vue-router.esm.js ***!
+  \********************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./app/components/RouteOneApp.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./app/components/RouteTwoApp.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \********************************************************************/
+
+/*!***********************************************************************************!*\
+  !*** ./app/components/RouteOneApp.vue?vue&type=template&id=45625727&scoped=true& ***!
+  \***********************************************************************************/
+
+/*!***********************************************************************************!*\
+  !*** ./app/components/RouteTwoApp.vue?vue&type=template&id=50053481&scoped=true& ***!
+  \***********************************************************************************/
+
+/*!*************************************************************************************************!*\
+  !*** ./app/components/RouteOneApp.vue?vue&type=style&index=0&id=45625727&scoped=true&lang=css& ***!
+  \*************************************************************************************************/
+
+/*!*************************************************************************************************!*\
+  !*** ./app/components/RouteTwoApp.vue?vue&type=style&index=0&id=50053481&scoped=true&lang=css& ***!
+  \*************************************************************************************************/
+
+/*!***************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./app/components/RouteOneApp.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./app/components/RouteTwoApp.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./app/App.vue?vue&type=template&id=2e015f16& ***!
+  \**********************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./app/components/RouteOneApp.vue?vue&type=template&id=45625727&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./app/components/RouteTwoApp.vue?vue&type=template&id=50053481&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--2-0!./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js??ref--2-2!./node_modules/vue-loader/lib??vue-loader-options!./app/components/RouteOneApp.vue?vue&type=style&index=0&id=45625727&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--2-0!./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js??ref--2-2!./node_modules/vue-loader/lib??vue-loader-options!./app/components/RouteTwoApp.vue?vue&type=style&index=0&id=50053481&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
