@@ -38,8 +38,11 @@ body {
 
       ul {
         display: flex;
+        height: 100%;
         flex-flow: row wrap;
         list-style-type: none;
+        align-content: space-between;
+        justify-content: space-between;
         margin: 0;
         padding: 1.5rem 1rem;
       }
@@ -50,10 +53,6 @@ body {
         flex-basis: 50%;
         margin: 0;
         padding: 0;
-
-        &:nth-child(4n-3), &:nth-child(4n-2) {
-          margin: .25rem 0 1.5rem;
-        }
       }
       svg {
         height: 1em;
@@ -93,9 +92,19 @@ body {
   > main, > article {
     grid-row: 2;
 
-    > section, > article, > .print-grid-row {
+    > section:not(.section--summary), > article, > .print-grid-row {
       margin: 3ex 0;
       padding: 0 1rem 0;
+    }
+
+    > section.section--summary {
+      margin: 0 0 5ex;
+      padding: 3ex 1rem;
+      background: $summary-bg;
+
+      p {
+        margin: 0;
+      }
     }
   }
 }
@@ -131,8 +140,12 @@ body {
       padding-right: 2rem;
     }
     > main, > article {
-      > section, > article, > .print-grid-row {
+      > section:not(.section--summary), > article, > .print-grid-row {
         padding: 0 2rem;
+      }
+
+      > section.section--summary {
+        padding: 3ex 2rem;
       }
     }
   }
@@ -173,13 +186,7 @@ body {
         }
 
         li {
-          &:nth-child(n) {
-            flex-basis: 25%;
-            margin: 0;
-          }
-          &:first-child {
-            text-align: left;
-          }
+          flex-basis: auto;
         }
       }
     }
@@ -222,8 +229,12 @@ body {
       }
     }
     > main, > article {
-      > section, > article, > .print-grid-row {
+      > section:not(.section--summary), > article, > .print-grid-row {
         padding: 0 .75in;
+      }
+
+      > section.section--summary {
+        padding: 3ex .75in;
       }
     }
   }

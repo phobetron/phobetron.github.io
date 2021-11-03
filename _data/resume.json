@@ -41,8 +41,9 @@
     {
       "name": "Languages",
       "keywords": [
-        "Ruby",
+        "Typescript",
         "Javascript",
+        "Ruby",
         "Elixir",
         "Crystal",
         "Python",
@@ -59,6 +60,7 @@
         "Vue.js",
         "AngularJS",
         "React",
+        "RxJS",
         "SASS/SCSS",
         "Microformats"
       ]
@@ -78,13 +80,15 @@
       ]
     },
     {
-      "name": "Systems & Tools",
+      "name": "Systems &amp; Tools",
       "keywords": [
         "Linux",
         "Git",
         "MacOS",
         "Vim",
         "iOS",
+        "Android",
+        "Figma",
         "Sketch",
         "Adobe CS"
       ]
@@ -93,8 +97,8 @@
       "name": "Software Design",
       "keywords": [
         "Service-Oriented Architecture",
-        "APIs & Protocols",
-        "Constant Integration",
+        "APIs &amp; Protocols",
+        "Continuous Integration &amp; Delivery",
         "Test-Driven Design",
         "Analytics",
         "Web Accessibility",
@@ -105,6 +109,20 @@
     }
   ],
   "work": [
+    {
+      "company": "Trade Republic",
+      "position": "Senior Frontend Engineer",
+      "website": "https://traderepublic.com",
+      "startDate": "2020-08-01",
+      "endDate": "Current",
+      "summary": "Helped build Trade Republic's Web-based trading application",
+      "highlights": [
+        "Created the VueJS-based application framework and most global components",
+        "Consulted with product designers regarding Web UX and the style system",
+        "Managed event streams and application state using RxJS",
+        "Helped develop and document processes ranging from coding standards to release management"
+      ]
+    },
     {
       "company": "Vehiculum Mobility Solutions GmbH",
       "position": "Senior Software Engineer",
@@ -125,10 +143,8 @@
       "endDate": "2019-05-31",
       "summary": "Helped update and maintain a large Rails monolith for an Educational Technology organization",
       "highlights": [
-        "Performed major and minor code refactoring",
         "Created an internationalization solution to fit the specific needs of an offshore partner",
         "Managed difficult third-party integrations",
-        "Worked to recover and codify lost institutional knowledge",
         "Helped migrate the front-end from a Knockout JS-based platform to Vue.js"
       ]
     },
@@ -204,7 +220,7 @@
     },
     {
       "company": "World Fuel Services",
-      "position": "Web Application/UI Developer (Contract: Daniel Allen & Associates)",
+      "position": "Web Application/UI Developer (Contract: Daniel Allen &amp; Associates)",
       "website": "https://www.wfscorp.com",
       "startDate": "2006-01-01",
       "endDate": "2006-09-30",
@@ -226,7 +242,7 @@
       "website": "",
       "startDate": "2004-01-01",
       "endDate": "2004-05-31",
-      "summary": "Designed and developed the default skin for the flagship product; created guidelines and updated products for accessibility compliance [Now Defunct]",
+      "summary": "Designed and developed the default skin for the flagship product; created guidelines and updated products for accessibility compliance",
       "highlights": []
     },
     {
@@ -235,7 +251,7 @@
       "website": "",
       "startDate": "2003-10-01",
       "endDate": "2003-12-31",
-      "summary": "Designed and helped develop the front-end to a customer history and direct-marketing response application that incorporated Do Not Call (DNC) provisioning capabilities [Now Defunct]",
+      "summary": "Designed and helped develop the front-end to a customer history and direct-marketing response application that incorporated Do Not Call (DNC) provisioning capabilities",
       "highlights": []
     },
     {
@@ -244,7 +260,7 @@
       "website": "",
       "startDate": "2003-03-01",
       "endDate": "2003-07-31",
-      "summary": "Designed and developed websites, marketing campaigns, branding, logos and brochures for various law firms [Now Defunct]",
+      "summary": "Designed and developed websites, marketing campaigns, branding, logos and brochures for various law firms",
       "highlights": []
     },
     {
