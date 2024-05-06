@@ -34,7 +34,7 @@
     },
     {
       "language": "German",
-      "fluency": "Working knowledge"
+      "fluency": "Working knowledge (A1)"
     }
   ],
   "skills": [
@@ -56,7 +56,7 @@
         "HTML",
         "SVG",
         "CSS",
-        "Webpack",
+        "Svelte/SvelteKit",
         "Vue.js",
         "AngularJS",
         "React",
@@ -73,9 +73,7 @@
         "Node.js",
         "Phoenix",
         "Django",
-        "SciPy",
         "Docker",
-        "MongoDB",
         "PostgreSQL"
       ]
     },
@@ -88,9 +86,7 @@
         "Vim",
         "iOS",
         "Android",
-        "Figma",
-        "Sketch",
-        "Adobe CS"
+        "Figma"
       ]
     },
     {
@@ -110,11 +106,25 @@
   ],
   "work": [
     {
+      "company": "bunch",
+      "position": "Staff Engineer",
+      "website": "https://bunch.capital",
+      "startDate": "2022-07-01",
+      "endDate": "Current",
+      "summary": "Helped create the Svelte-based SPA of a web platform for private market investments",
+      "highlights": [
+        "Created an SPA built using Svelte 4 and SvelteKit 2",
+        "Assisted in research, validation, and specification of UX concerns, in addition to their implementation",
+        "Took part in and/or led various cross-departmental initiatives, such as platform support",
+        "Helped develop and document processes ranging from coding standards to release management"
+      ]
+    },
+    {
       "company": "Trade Republic",
       "position": "Senior Frontend Engineer",
       "website": "https://traderepublic.com",
       "startDate": "2020-08-01",
-      "endDate": "Current",
+      "endDate": "2022-05-31",
       "summary": "Helped build Trade Republic's Web-based trading application",
       "highlights": [
         "Created the VueJS-based application framework and most global components",
